@@ -1,3 +1,5 @@
+import 'dart:math' as math;
+
 extension IterableExtensions on Iterable<String> {
   /// Check if substring exists in iterable
   bool containsSubstring(String substring) {
@@ -9,4 +11,11 @@ extension IterableExtensions on Iterable<String> {
     });
     return contains;
   }
+}
+
+extension IterableNumberExtensions on Iterable<double> {
+
+  double get min => reduce(math.min);
+
+  double get max => reduce(math.max);
 }

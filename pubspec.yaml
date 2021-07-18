@@ -13,6 +13,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  retrofit: ^2.0.0
+  intl: ^0.17.0
+  device_info: ^2.0.2
 
 dev_dependencies:
   flutter_test:
